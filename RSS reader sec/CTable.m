@@ -8,6 +8,8 @@
 
 #import "CTable.h"
 #import "Feeds.h"
+#import "ParserDelegate.h"
+#import "FeedViewController.h"
 
 @interface CTable ()
 
@@ -29,7 +31,9 @@
     self.dataSource = self;
     alertView =[[CAlert alloc] initWithTitle:@"Add new Feed" message:@"     " delegate:self cancelButtonTitle:@"Cancel" otherButtonTitle:@"Confirm"];
     alertView.delegat = self;
-    Feeds *feed  = [[[Feeds alloc] initWithName:@"First test feed" URL:@"1st feed url"] autorelease];
+
+
+    Feeds *feed  = [[[Feeds alloc] initWithName:@"images apple" URL:@"http://images.apple.com/main/rss/hotnews/hotnews.rss"] autorelease];
     self.mass = [NSMutableArray arrayWithObject:feed];
     return self;
 }
@@ -126,6 +130,10 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
 {
 	[mass exchangeObjectAtIndex:sourceIndexPath.row withObjectAtIndex:destinationIndexPath.row];
     [self reloadData];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [delegat cellSelect:indexPath];
 }
 
 -(void)dealloc

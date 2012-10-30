@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "CTable.h"
 
+
 @interface RootViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,MyProtocolTable, MyProtocolAlert>{
+    
     CTable *tableView;
     CAlert *alertView;
 }
 
+-(void)cellSelect:(NSIndexPath *)indexPath;
 @property(nonatomic, retain) CTable *tableView;
 @property(nonatomic, retain) CAlert *alertView;
 

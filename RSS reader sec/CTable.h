@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "Feeds.h"
 #import "CAlert.h"
-@protocol MyProtocolTable<NSObject>
 
+@protocol MyProtocolTable<NSObject>
+@optional
+- (void)cellSelect:(NSIndexPath *)indexPath;
 @end
 
 
 @interface CTable : UITableView <UIAlertViewDelegate, UITableViewDelegate, UITableViewDataSource,MyProtocolAlert>
 {
     id<MyProtocolTable>delegat;
+    
     NSMutableArray *mass;
     CAlert *alertView;
 }
@@ -24,6 +27,8 @@
 @property (nonatomic, retain)CAlert *alertView;
 @property (nonatomic, retain)id<MyProtocolTable>delegat;
 @property (nonatomic, retain) NSMutableArray *mass;
+
+
 
 
 

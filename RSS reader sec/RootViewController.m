@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "FeedViewController.h"
+#import "Feeds.h"
 
 @interface RootViewController ()
 
@@ -35,10 +37,19 @@
     self.navigationItem.leftBarButtonItem = add;
     tableView = [[CTable alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegat = self;
-
-
+    
     [self.view addSubview:tableView];
 }
+-(void)cellSelect:(NSIndexPath *)indexPath
+{
+    Feeds *feed = [self.tableView.mass objectAtIndex:indexPath.row];
+
+    FeedViewController *second = [[FeedViewController alloc] initwithurl:feed.URL];
+    [self.navigationController pushViewController:second animated:YES];
+
+    
+}
+
 -(void)editing
 {
     [tableView editing];

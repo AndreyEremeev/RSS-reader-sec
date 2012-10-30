@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8406212A1640115E00F90315 /* ParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840621291640115E00F90315 /* ParserDelegate.m */; };
+		840621321640165000F90315 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840621311640165000F90315 /* FeedViewController.m */; };
+		840621751640276000F90315 /* CTableNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 840621741640276000F90315 /* CTableNews.m */; };
 		840F74F2163B5BA3009845A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840F74F1163B5BA3009845A5 /* UIKit.framework */; };
 		840F74F4163B5BA3009845A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840F74F3163B5BA3009845A5 /* Foundation.framework */; };
 		840F74F6163B5BA3009845A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840F74F5163B5BA3009845A5 /* CoreGraphics.framework */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840621281640115E00F90315 /* ParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserDelegate.h; sourceTree = "<group>"; };
+		840621291640115E00F90315 /* ParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserDelegate.m; sourceTree = "<group>"; };
+		840621301640165000F90315 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		840621311640165000F90315 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		840621731640276000F90315 /* CTableNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableNews.h; sourceTree = "<group>"; };
+		840621741640276000F90315 /* CTableNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTableNews.m; sourceTree = "<group>"; };
 		840F74ED163B5BA3009845A5 /* RSS reader sec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS reader sec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840F74F1163B5BA3009845A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		840F74F3163B5BA3009845A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,12 +103,18 @@
 				840F750F163B5BD4009845A5 /* Feeds.m */,
 				840F7500163B5BA3009845A5 /* AppDelegate.h */,
 				840F7501163B5BA3009845A5 /* AppDelegate.m */,
+				840621731640276000F90315 /* CTableNews.h */,
+				840621741640276000F90315 /* CTableNews.m */,
 				840F7514163B5D31009845A5 /* CTable.h */,
 				840F7515163B5D31009845A5 /* CTable.m */,
 				840F7517163B5D48009845A5 /* CAlert.h */,
 				840F7518163B5D48009845A5 /* CAlert.m */,
+				840621301640165000F90315 /* FeedViewController.h */,
+				840621311640165000F90315 /* FeedViewController.m */,
 				840F7511163B5CD8009845A5 /* RootViewController.h */,
 				840F7512163B5CD8009845A5 /* RootViewController.m */,
+				840621281640115E00F90315 /* ParserDelegate.h */,
+				840621291640115E00F90315 /* ParserDelegate.m */,
 				840F74F8163B5BA3009845A5 /* Supporting Files */,
 			);
 			path = "RSS reader sec";
@@ -190,6 +205,9 @@
 				840F7513163B5CD8009845A5 /* RootViewController.m in Sources */,
 				840F7516163B5D31009845A5 /* CTable.m in Sources */,
 				840F7519163B5D48009845A5 /* CAlert.m in Sources */,
+				8406212A1640115E00F90315 /* ParserDelegate.m in Sources */,
+				840621321640165000F90315 /* FeedViewController.m in Sources */,
+				840621751640276000F90315 /* CTableNews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
